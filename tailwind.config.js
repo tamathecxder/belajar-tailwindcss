@@ -7,6 +7,9 @@ module.exports = {
       },
       fontFamily: {
         'inter': ['Inter']
+      },
+      colors: {
+        'atomic': '#243c5a'
       }
     },
   },
