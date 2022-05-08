@@ -1,33 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800;900&display=swap" rel="stylesheet">
+
   <title>TailwindCSS dengan CDN</title>
   <link rel="stylesheet" href="../public/css/output.css">
   <style>
-    * {
+    /* * {
       border: 1px solid red;
-    }
+    } */
   </style>
 </head>
+
 <body>
 
-  <h1 class="text-2xl font-bold">Belajar utilities Tailwind CSS</h1>
-  
-  <section class="mb-10">
-    <h3 class="font-semibold">Spacing</h3>
+  <h1 class="text-5xl font-bold text-center my-8">Belajar Utilities Tailwind CSS</h1>
+
+  <section class="mb-10 bg-amber-300">
+    <h3 class="font-semibold text-3xl text-center">Spacing</h3>
     <div class="m-10">Margin</div>
     <div class="p-10">Padding</div>
   </section>
 
-  
-  <section class="mb-10 w-full">
-    <h3 class="font-semibold">Sizing</h3>
-    <div class="w-64 h-32">Size - box 1</div>
-    <div class="max-w-md min-h-screen">Size - box 2</div>
+
+  <section class="mb-10 w-full bg-teal-600">
+    <h3 class="font-semibold text-3xl text-center">Sizing</h3>
+    <div class="w-64 h-32 bg-red-500 flex items-center justify-center">Size - box 1</div>
+    <div class="max-w-md min-h-screen bg-yellow-200 flex items-center justify-center">Size - box 2</div>
+  </section>
+
+  <section class="mb-10 font-inter mx-auto max-w-3xl">
+    <h2 class="m-4 text-3xl font-bold font-mono">Belajar Utility Typography pada Tailwind CSS</h2>
+    <div class="mx-4">
+      <p>Author: John Doe - <span>12 Januari 2022</span></p>
+    </div>
+    <div>
+      <p class="m-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut beatae esse id suscipit nam
+        necessitatibus facilis eius quam incidunt veniam! Debitis laboriosam reprehenderit expedita architecto adipisci.
+        Labore dolorem tempora odio deleniti voluptas ab?</p>
+      <p class="m-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident mollitia nostrum nulla culpa,
+        dolorem consectetur fugit possimus dolorum dolore eaque autem aperiam tenetur error sapiente! Itaque animi
+        aperiam, nam modi enim error quisquam qui nesciunt officiis quidem obcaecati facere veniam. Tenetur fugit
+        doloremque repellat, dolore itaque dolor quis amet in fugiat inventore, voluptatum voluptatibus, vitae dolorum
+        necessitatibus quaerat facere quae excepturi. Facilis eligendi quis laboriosam dolorem, assumenda autem quod
+        itaque?</p>
+      <blockquote class="m-4 py-2 italic font-thin text-xl">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aperiam asperiores eaque necessitatibus rem optio deleniti earum. Perferendis repellat, nobis odio fuga quidem ipsam, eum ea debitis et illo excepturi."</blockquote>
+      <p class="m-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, maiores ad, natus repellendus vel
+        consequuntur voluptatum nostrum alias eius vitae minima similique itaque nulla quam eos. Non saepe quam beatae,
+        inventore ipsum vero at! Minus consectetur laboriosam temporibus hic iusto autem velit distinctio quidem qui
+        dolorum fugiat quos sit totam ducimus ea molestias deleniti ullam perferendis quam, quibusdam doloribus fuga ut
+        adipisci! Necessitatibus, excepturi atque dolore quo praesentium ratione officiis cupiditate aliquam dolorem eos
+        expedita magnam reiciendis impedit cumque quae rem. Eveniet, vero. Praesentium id sapiente veritatis vel nisi
+        cum est ab beatae nobis eveniet, totam ratione reprehenderit?</p>
+    </div>
   </section>
 
 </body>
+
 </html>
