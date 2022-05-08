@@ -6,12 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TailwindCSS dengan CDN</title>
   <link rel="stylesheet" href="../public/css/output.css">
+  <style>
+    * {
+      border: 1px solid red;
+    }
+  </style>
 </head>
 <body>
 
-  <h1 class="text-3xl text-slate-600 font-extrabold">Hello World</h1>
-  <a href="" class="bg-blue-500 p-3 text-white inline-block m-3 rounded shadow hover:bg-slate-500">Contoh button</a>
-  <p class="m-3 bg-yellow-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus magni, iure dolore accusantium, error similique delectus, facilis voluptas voluptates doloremque deleniti tenetur temporibus pariatur molestias accusamus maiores rem praesentium reiciendis.</p>
+  <h1 class="text-2xl font-bold">Belajar utilities Tailwind CSS</h1>
+  
+  <section class="mb-10">
+    <h3 class="font-semibold">Spacing</h3>
+    <div class="m-10">Margin</div>
+    <div class="p-10">Padding</div>
+  </section>
+
+  
+  <section class="mb-10 w-full">
+    <h3 class="font-semibold">Sizing</h3>
+    <div class="w-64 h-32">Size - box 1</div>
+    <div class="max-w-md min-h-screen">Size - box 2</div>
+  </section>
 
 </body>
 </html>
