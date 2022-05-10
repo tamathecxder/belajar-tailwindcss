@@ -13,14 +13,11 @@
 
   <title>TailwindCSS dengan CDN</title>
   <link rel="stylesheet" href="../public/css/output.css">
-  <style>
-    /* * {
-      border: 1px solid red;
-    } */
+  <style type="text/tailwindcss">
   </style>
 </head>
 
-<body>
+<body class="dark:bg-slate-800 dark:text-slate-200">
 
   <h1 class="text-5xl font-bold text-center my-8">Belajar Utilities <span
       class="bg-gradient-to-r from-blue-300 to-teal-400 text-transparent bg-clip-text">TailwindCSS</span></h1>
@@ -118,21 +115,35 @@
   <!-- Pseudo Classes -->
   <hr class="my-12" />
 
+  <div class="flex justify-center mb-4">
+    <span class="text-sm text-slate-400 mr-2">Light</span>
+    <input type="checkbox" class="hidden" name="" id="toggle">
+    <label for="toggle">
+      <div class="rounded-full h-5 w-9 bg-slate-500 flex items-center cursor-pointer">
+        <div class="rounded-full bg-slate-200 w-4 h-4 p-2 toggle-circle"></div>
+      </div>
+    </label>
+    <span class="text-sm text-slate-400 ml-4">Dark</span>
+  </div>
   <div>
+
     <p class="font-inter font-semibold mb-4 block text-center">Pseudo-classes</p>
-    <button class="px-6 py-2 rounded-lg bg-blue-500 text-white font-semibold font-inter mx-auto block hover:bg-blue-700 active:bg-blue-900 focus:ring focus:ring-blue-300">Simpan</button>
+    <button class="px-6 py-2 rounded-lg bg-blue-500 dark:bg-slate-600 dark:hover:bg-slate-400 dark:hover:text-slate-800 text-white font-semibold font-inter mx-auto block hover:bg-blue-700 active:bg-blue-900 focus:ring focus:ring-blue-300">Simpan</button>
 
     <!-- Card -->
-    <div class="group max-w-lg bg-slate-50 border border-slate-300 rounded-xl my-8 mx-auto shadow-md p-6 font-inter hover:bg-slate-800 selection:bg-gray-100 selection:text-black">
-      <h5 class="font-bold text-slate-600 mb-4 text-lg group-hover:text-gray-400">My Card</h5>
-      <p class="font-mono first-letter:text-6xl first-letter:mr-3 first-line:text-uppercase first-letter:float-left first-line:tracking-widest text-slate-500 group-hover:text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sequi optio doloribus ipsam non, ex, exercitationem ipsa accusamus sunt est debitis temporibus perspiciatis neque hic modi quibusdam harum eius impedit!</p>
+    <div class="group max-w-lg bg-slate-50 border border-slate-300 rounded-xl my-8 mx-auto shadow-md p-6 font-inter hover:bg-sky-400 selection:bg-gray-100 selection:text-black dark:hover:bg-slate-300">
+      <h5 class="font-bold text-slate-600 mb-4 text-lg group-hover:text-slate-900 dark:group-hover:text-slate-800">My Card</h5>
+      <p class="font-mono first-letter:text-6xl first-letter:mr-3 first-line:text-uppercase dark:group-hover:text-slate-800 first-letter:float-left first-line:tracking-widest text-slate-500 group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sequi optio doloribus ipsam non, ex, exercitationem ipsa accusamus sunt est debitis temporibus perspiciatis neque hic modi quibusdam harum eius impedit!</p>
     </div>
 
     <div class="max-w-lg border p-6 rounded-lg border-slate-300 mx-auto font-inter shadow-md">
-      <label for="email">
-        <span class="text-slate-600 font-semibold mb-2 after:content-['*'] after:text-red-300 after:ml-0.5">Email</span>
-        <input type="email" class="px-4 py-2 border shadow rounded-lg w-full inline-block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-400 focus:border-sky-400" name="email" id="email" placeholder="Masukkan alamat email Anda...">
-      </label>
+      <form action="">
+        <label for="email">
+          <span class="text-slate-600 font-semibold mb-4 after:content-['*'] after:text-red-300 after:ml-0.5">Email</span>
+          <input type="email" class="px-4 py-2 border shadow rounded-lg w-full inline-block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-400 focus:border-sky-400 invalid:text-red-400 invalid:focus:ring-red-500 invalid:focus:border-red-500 peer" name="email" id="email" placeholder="Masukkan alamat email Anda...">
+          <p class="text-sm text-red-400 m-1 invisible peer-invalid:visible">Alamat email yang Anda masukkan salah</p>
+        </label>
+      </form>
     </div>
   </div>
 
@@ -140,5 +151,12 @@
   <div class="mb-96"></div>
 
 </body>
+<script>
+  const toggle = document.querySelector('#toggle');
+  const html = document.querySelector('html');
+  toggle.addEventListener('change', function() {
+    toggle.checked ? html.classList.add('dark') : html.classList.remove('dark');
+  });
+</script>
 
 </html>
