@@ -123,11 +123,19 @@
     <button class="px-6 py-2 rounded-lg bg-blue-500 text-white font-semibold font-inter mx-auto block hover:bg-blue-700 active:bg-blue-900 focus:ring focus:ring-blue-300">Simpan</button>
 
     <!-- Card -->
-    <div class="max-w-lg bg-slate-50 border border-slate-300 rounded-xl my-8 mx-auto shadow-md p-6 font-inter">
-      <h5 class="font-bold text-slate-600 mb-4 text-lg">My Card</h5>
-      <p class="font-mono text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sequi optio doloribus ipsam non, ex, exercitationem ipsa accusamus sunt est debitis temporibus perspiciatis neque hic modi quibusdam harum eius impedit!</p>
+    <div class="group max-w-lg bg-slate-50 border border-slate-300 rounded-xl my-8 mx-auto shadow-md p-6 font-inter hover:bg-slate-800 selection:bg-gray-100 selection:text-black">
+      <h5 class="font-bold text-slate-600 mb-4 text-lg group-hover:text-gray-400">My Card</h5>
+      <p class="font-mono first-letter:text-6xl first-letter:mr-3 first-line:text-uppercase first-letter:float-left first-line:tracking-widest text-slate-500 group-hover:text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sequi optio doloribus ipsam non, ex, exercitationem ipsa accusamus sunt est debitis temporibus perspiciatis neque hic modi quibusdam harum eius impedit!</p>
+    </div>
+
+    <div class="max-w-lg border p-6 rounded-lg border-slate-300 mx-auto font-inter shadow-md">
+      <label for="email">
+        <span class="text-slate-600 font-semibold mb-2 after:content-['*'] after:text-red-300 after:ml-0.5">Email</span>
+        <input type="email" class="px-4 py-2 border shadow rounded-lg w-full inline-block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-400 focus:border-sky-400" name="email" id="email" placeholder="Masukkan alamat email Anda...">
+      </label>
     </div>
   </div>
+
 
   <div class="mb-96"></div>
 
