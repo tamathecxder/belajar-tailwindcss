@@ -11,6 +11,16 @@ module.exports = {
       },
       colors: {
         'atomic': '#243c5a'
+      },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+        'shaking': 'shakingFrames 1s ease-in-out infinite',
+      },
+      keyframes: {
+        shakingFrames: {
+          '0% 100%': { tranform: 'rotate(-5deg)' },
+          '50%': { transform: 'rotate(5deg)' }
+        }
       }
     },
   },
