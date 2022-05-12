@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800;900&display=swap" rel="stylesheet">
 
-  <title>TailwindCSS dengan CDN</title>
+  <title>TailwindCSS with WPU</title>
   <link rel="stylesheet" href="../public/css/output.css">
   <style type="text/tailwindcss">
   </style>
@@ -136,16 +136,25 @@
       <p class="font-mono first-letter:text-6xl first-letter:mr-3 first-line:text-uppercase dark:group-hover:text-slate-800 first-letter:float-left first-line:tracking-widest text-slate-500 group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sequi optio doloribus ipsam non, ex, exercitationem ipsa accusamus sunt est debitis temporibus perspiciatis neque hic modi quibusdam harum eius impedit!</p>
     </div>
 
-    <div class="max-w-lg border p-6 rounded-lg border-slate-300 mx-auto font-inter shadow-md">
+    <div class="max-w-lg border p-6 rounded-lg dark:bg-slate-50 border-slate-300 mx-auto font-inter shadow-md">
       <form action="">
         <label for="email">
-          <span class="text-slate-600 font-semibold mb-4 after:content-['*'] after:text-red-300 after:ml-0.5">Email</span>
+          <span class="text-slate-600 font-semibold mb-6 after:content-['*'] after:text-red-300 after:ml-0.5">Email</span>
           <input type="email" class="px-4 py-2 border shadow rounded-lg w-full inline-block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-400 focus:border-sky-400 invalid:text-red-400 invalid:focus:ring-red-500 invalid:focus:border-red-500 peer" name="email" id="email" placeholder="Masukkan alamat email Anda...">
           <p class="text-sm text-red-400 m-1 invisible peer-invalid:visible">Alamat email yang Anda masukkan salah</p>
         </label>
       </form>
     </div>
   </div>
+
+  <hr class="my-12">
+
+   <!-- Transform utils -->
+   <h2 class="text-center mb-24 text-2xl font-mono font-bold">Transform</h2>
+
+   <div class="w-40 h-40 bg-blue-600 mx-auto rounded-lg shadow-lg hover:scale-120 hover:rotate-45">
+
+   </div>
 
 
   <div class="mb-96"></div>
