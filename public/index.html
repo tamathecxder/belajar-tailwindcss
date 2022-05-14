@@ -161,25 +161,42 @@
     </div>
   </div>
 
-  <hr class="my-12">
+  <hr class="my-12 border-t-4">
 
   <!-- Transform utils -->
   <h2 class="text-center mb-24 text-2xl font-mono font-bold">Transform</h2>
-
+  
   <!-- dengan dibungkus oleh parent element sebagai group untuk meniadakan transisi patah-patah -->
   <div class="w-40 h-40 mx-auto rounded-lg group">
     <div
-      class="w-full h-full bg-teal-400 rounded-lg shadow-lg group-hover:rotate-180 origin-top-left transition duration-1000 ">
-    </div>
+    class="w-full h-full bg-teal-400 rounded-lg shadow-lg group-hover:rotate-180 origin-top-left transition duration-1000 ">
   </div>
+</div>
 
-  <!-- tanpa dibungkus oleh parent element sebagai group -->
-  <div class="w-40 h-40 bg-blue-400 mt-20 mx-auto rounded-lg shadow-lg hover:scale-120 hover:rotate-180 origin-top-right transition hover:bg-blue-600"></div>
+<!-- tanpa dibungkus oleh parent element sebagai group -->
+<div class="w-40 h-40 bg-blue-400 mt-20 mx-auto rounded-lg shadow-lg hover:scale-120 hover:rotate-180 origin-top-right transition hover:bg-blue-600"></div>
 
-  <!-- animation utils -->
-  <div class="w-40 h-40 bg-red-400 mt-20 mx-auto rounded-lg shadow-lg animate-shaking"></div>
+<!-- animation utils -->
+<div class="w-40 h-40 bg-red-400 mt-20 mx-auto rounded-lg shadow-lg animate-shaking"></div>
 
-  <div class="mb-96"></div>
+<hr class="my-12 border-t-4">
+ 
+<!-- Layouting In TailwindCSS -->
+<div class="container px-16 mx-auto"> 
+  <div class="border rounded-lg shadow-lg p-10 relative">
+    <div class="w-10 h-10 bg-gray-500 flex rounded-full absolute -top-5 -right-5 cursor-pointer">
+      <span class="text-slate-200 font-extrabold text-2xl m-auto">X</span>
+    </div>
+    <img src="../public/assets/img/photo4.jpg" class="p-2 float-right rounded-2xl" width="180" alt="mountain">
+    <p class="font-inter text-slate-700">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, suscipit voluptatem quos ea maxime repellendus iste esse possimus provident hic nobis ipsa consectetur! Quis corporis laudantium quam tempora repellat velit fuga ex eaque. Velit exercitationem, magnam accusantium accusamus possimus autem totam quae. Recusandae id consequatur ratione culpa voluptates veniam est eius hic illo quidem. Aliquam, temporibus! Sequi dolorum, cumque consequuntur, aliquam maxime ex modi odit deserunt nostrum recusandae animi quo distinctio, eum ullam inventore. Ab voluptatum illum quisquam eos officiis aliquam earum sed reprehenderit officia. Rerum hic esse deserunt eveniet voluptas illo, quisquam velit iste ipsam libero, sunt saepe itaque!</p>
+  </div>
+</div>
+
+
+
+
+<div class="mb-96"></div>
+
 
 </body>
 <script>
