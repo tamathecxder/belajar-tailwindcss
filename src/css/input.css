@@ -3,6 +3,25 @@
 @tailwind utilities;
 /* @apply; */
 
+@layer base {
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white p-2 shadow-md rounded-lg border;
+  }
+
+  .grid-card {
+    @apply bg-teal-600 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] rounded-lg overflow-hidden relative hover:scale-95 transition-all duration-500;
+  }
+}
+
 #toggle:checked ~ label div.toggle-circle {
       @apply translate-x-5;
     }
